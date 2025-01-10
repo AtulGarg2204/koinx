@@ -12,19 +12,15 @@ This project is a server-side application that fetches and analyzes cryptocurren
 
 ## API Endpoints
 
-1. GET `/`
-   Returns API information and available endpoints.
-
-2. GET `/stats?coin=<coin_name>`
+1. GET `/stats?coin=<coin_name>`
    Returns the latest price, market cap, and 24-hour change for the specified cryptocurrency.
 
-3. GET `/deviation?coin=<coin_name>`
+2. GET `/deviation?coin=<coin_name>`
    Returns the standard deviation of the price for the last 100 records of the specified cryptocurrency.
 
-## Testing the API
+## Setup
 
-You can test the API using cURL, Postman, or your web browser. Here are some example commands:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Create a `.env` file in the root directory and add your MongoDB connection string:
 
-1. Get API information:
-```bash
-curl https://koinx-crypto-backend.onrender.com/
